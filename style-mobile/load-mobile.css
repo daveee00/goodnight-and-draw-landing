@@ -18,10 +18,11 @@
     body:not(.loader-dismissed) .space,
     body:not(.loader-dismissed) .sketchbook-wrapper,
     body:not(.loader-dismissed) .last-space,
-    body:not(.loader-dismissed) footer {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(20px);
+    body:not(.loader-dismissed) footer,
+    body:not(.loader-dismissed) .animation-section {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: translateY(20px) !important;
     }
     
     /* Show main content after loader is dismissed on mobile */
@@ -30,12 +31,13 @@
     body.loader-dismissed .space,
     body.loader-dismissed .sketchbook-wrapper,
     body.loader-dismissed .last-space,
-    body.loader-dismissed footer {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
-        transition-delay: 0.3s;
+    body.loader-dismissed footer,
+    body.loader-dismissed .animation-section {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out !important;
+        transition-delay: 0.3s !important;
     }
     
     .loader-wrapper {

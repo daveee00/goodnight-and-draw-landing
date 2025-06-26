@@ -226,9 +226,6 @@
     justify-content: flex-start;
     margin: 0;
     padding: 0px;
-    transition-delay: 600ms;
-    transition-duration: 1200ms;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     width: calc(100%);
     max-width: calc(100%);
     position: relative;
