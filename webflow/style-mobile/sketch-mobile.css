@@ -94,8 +94,6 @@
   border-radius: 16px;
   margin-bottom: 16px;
   display: flex;
-  flex-direction: column;
-justify-content: center;
   align-items: center;
 }
 
@@ -108,6 +106,8 @@ justify-content: center;
   letter-spacing: 0% !important;
   opacity: .5 !important;
   color: black;
+  padding: 0;
+  margin: 0;
 }
 #list-canvas .list-element p .list-artist {
   font-family: inherit;
