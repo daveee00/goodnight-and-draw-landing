@@ -53,7 +53,7 @@
     width: 80%;
     }
     
-    .quote {
+    .loader .quote {
         font-size: 0.8rem !important;
         color: rgba(0, 0, 0, 1);
         text-align: center;
