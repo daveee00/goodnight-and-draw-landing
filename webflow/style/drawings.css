@@ -71,7 +71,7 @@
   padding-left: 32px;
 }
 #draw3 img {
-  height: 90%;
+  width: 100%;
 }
 #draw3 .content-text {
   justify-content: center;
