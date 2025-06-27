@@ -70,8 +70,8 @@
   padding-bottom: 32px;
   padding-left: 32px;
 }
-#draw3 img {
-  width: 100%;
+#draw3 .picture img {
+  height: 100% !important;
 }
 #draw3 .content-text {
   justify-content: center;
