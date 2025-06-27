@@ -42,7 +42,7 @@
     
     .loader-wrapper {
         height: 80%;
-        width: 90% !important;
+        width: 80% !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -53,8 +53,8 @@
     width: 80%;
     }
     
-    .loader .quote {
-        font-size: 0.8rem !important;
+    .quote {
+        font-size: 1rem !important;
         color: rgba(0, 0, 0, 1);
         text-align: center;
         margin: 24px 0;
