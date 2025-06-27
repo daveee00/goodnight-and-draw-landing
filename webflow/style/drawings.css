@@ -103,6 +103,17 @@
   flex-direction: column; 
   justify-content: center;
   align-items: center;
+    overflow: visible;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.spotify-logo svg {
+  width: 48px;
+  height: 48px;
+  overflow: visible;
+  display: block;
+  flex-shrink: 0;
 }
 
 @keyframes fadeInLogo {
