@@ -42,7 +42,7 @@
     
     .loader-wrapper {
         height: 80%;
-        width: 80% !important;
+        width: 90% !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
