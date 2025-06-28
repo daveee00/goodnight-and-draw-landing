@@ -162,5 +162,4 @@ function initSpotifyFunctionality() {
   document.addEventListener('click', handleClickOutside);
 }
 
-// Export the initialization function
-export { initSpotifyFunctionality };
+  initSpotifyFunctionality();
