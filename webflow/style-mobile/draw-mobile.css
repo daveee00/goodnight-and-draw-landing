@@ -124,6 +124,10 @@
     grid-column: span 8;
     grid-row: span 3;
   }
+  #draw3 .picture img {
+  object-fit: cover;
+  object-position: center;
+}
   /*–––––––––––––––––––––*/
   #draw4 .title {
     justify-content: end;
