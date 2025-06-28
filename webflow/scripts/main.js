@@ -10,7 +10,7 @@ const pictureArray = [
   "https://goodnight-and-draw.netlify.app/array/Immagine_3.png",
   "https://goodnight-and-draw.netlify.app/array/Immagine_2.png",
   "https://goodnight-and-draw.netlify.app/array/teddy-clear.png",
-  "https://goodnight-and-draw.netlify.app/array/mickey.png",
+  "https://goodnight-and-draw.netlify.app/array/bees.png",
   "https://goodnight-and-draw.netlify.app/array/race.png",
   "https://goodnight-and-draw.netlify.app/array/pinks.png",
   "https://goodnight-and-draw.netlify.app/array/disease.png",
