@@ -1,7 +1,5 @@
-// Import player-related functions
-import { playerCheck, gradientsCheck, crossCheckPlayer } from './player.js';
 // Import Spotify functionality
-import { initSpotifyFunctionality } from './inspo.js';
+import { initSpotifyFunctionality } from 'goodnight-and-draw.netlify.app/webflow/scripts/inspo.js';
 
 const pictureArray = [
   "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_4.png",
