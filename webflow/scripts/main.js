@@ -1,16 +1,16 @@
 const pictureArray = [
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_4.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/oswald-1.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/oswald-2.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_8.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_7.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_6.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_5.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_3.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_2.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/IMG_0489.png",
-  "https://cdn.jsdelivr.net/gh/daveee00/drawings/mickey.png",
+  "https://goodnight-and-draw.netlify.app/array/Immagine_4.png",
+  "https://goodnight-and-draw.netlify.app/array/oswald-1.png",
+  "https://goodnight-and-draw.netlify.app/array/oswald-2.png",
+  "https://goodnight-and-draw.netlify.app/drawings/array/Immagine.png",
+  "https://goodnight-and-draw.netlify.app/drawings/array/Immagine_8.png",
+  "https://goodnight-and-draw.netlify.app/drawings/array/Immagine_7.png",
+  "https://goodnight-and-draw.netlify.app/drawings/array/Immagine_6.png",
+  "https://goodnight-and-draw.netlify.app/drawings/array/Immagine_5.png",
+  "https://goodnight-and-draw.netlify.app/drawings/array/Immagine_3.png",
+  "https://goodnight-and-draw.netlify.app/drawings/array/Immagine_2.png",
+  "https://goodnight-and-draw.netlify.app/drawings/array/IMG_0489.png",
+  "https://goodnight-and-draw.netlify.app/drawings/mickey.png",
 ];
 
 const textListElement = [
