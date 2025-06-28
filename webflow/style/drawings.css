@@ -73,6 +73,7 @@
 #draw3 .picture img {
   height: 100% !important;
   width: 100%;
+  display: block;
 }
 #draw3 .content-text {
   justify-content: center;
