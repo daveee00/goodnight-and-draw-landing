@@ -1,5 +1,5 @@
 // Import Spotify functionality
-import { initSpotifyFunctionality } from 'goodnight-and-draw.netlify.app/webflow/scripts/inspo.js';
+import { initSpotifyFunctionality } from './inspo.js';
 
 const pictureArray = [
   "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_4.png",
