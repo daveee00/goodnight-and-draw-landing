@@ -124,9 +124,6 @@
     grid-column: span 8;
     grid-row: span 3;
   }
-  #draw3 .picture img {
-  width: 100%
-  }
   /*–––––––––––––––––––––*/
   #draw4 .title {
     justify-content: end;
