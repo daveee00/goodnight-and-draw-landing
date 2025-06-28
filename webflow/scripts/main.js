@@ -11,6 +11,12 @@ const pictureArray = [
   "https://goodnight-and-draw.netlify.app/array/Immagine_2.png",
   "https://goodnight-and-draw.netlify.app/array/teddy-clear.png",
   "https://goodnight-and-draw.netlify.app/array/mickey.png",
+  "https://goodnight-and-draw.netlify.app/array/race.png",
+  "https://goodnight-and-draw.netlify.app/array/pinks.png",
+  "https://goodnight-and-draw.netlify.app/array/disease.png",
+  "https://goodnight-and-draw.netlify.app/array/girl.png",
+  "https://goodnight-and-draw.netlify.app/array/positions.png",
+  "https://goodnight-and-draw.netlify.app/array/phone.png",
 ];
 
 const textListElement = [
@@ -26,6 +32,12 @@ const textListElement = [
   "li-10",
   "li-11",
   "li-12",
+  "li-13",
+  "li-14",
+  "li-15",
+  "li-16",
+  "li-17",
+  "li-18",
 ];
 
 function logPictureArrayIndices() {}
