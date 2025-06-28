@@ -165,5 +165,6 @@
 
 .footer {
   height: fit-content !important;
+  margin-bottom: 4px !important;
 }
 }
