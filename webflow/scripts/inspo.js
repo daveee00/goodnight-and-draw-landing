@@ -75,9 +75,14 @@ function showSpotifyFrame(index) {
 
 // Function to handle Spotify logo clicks
 function handleSpotifyLogoClick(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  
   const clickedLogo = event.currentTarget;
   const logoId = clickedLogo.id;
   const logoIndex = spotifyLogos.indexOf(logoId);
+  
+  console.log('Spotify logo clicked:', logoId, 'at index:', logoIndex);
   
   if (logoIndex !== -1) {
     const frameId = spotifyFrames[logoIndex];
@@ -118,7 +123,7 @@ function handleClickOutside(event) {
   // Check if click is on a Spotify logo (don't hide if clicking on logo)
   const isSpotifyLogo = spotifyLogos.some(logoId => {
     const logo = document.getElementById(logoId);
-    return logo && logo.contains(event.target);
+    return logo && (logo === event.target || logo.contains(event.target));
   });
   
   if (isSpotifyLogo) {
@@ -145,6 +150,8 @@ function handleClickOutside(event) {
 
 // Initialize Spotify functionality
 function initSpotifyFunctionality() {
+  console.log('Initializing Spotify functionality...');
+  
   // Hide all frames on page load with a small delay for smooth loading
   setTimeout(() => {
     hideAllSpotifyFrames();
@@ -154,12 +161,24 @@ function initSpotifyFunctionality() {
   spotifyLogos.forEach(logoId => {
     const logo = document.getElementById(logoId);
     if (logo) {
+      // Remove any existing listeners to prevent duplicates
+      logo.removeEventListener('click', handleSpotifyLogoClick);
+      // Add the click listener
       logo.addEventListener('click', handleSpotifyLogoClick);
+      console.log('Added click listener to:', logoId);
+    } else {
+      console.warn('Spotify logo not found:', logoId);
     }
   });
   
   // Add click event listener to document for click-outside functionality
-  document.addEventListener('click', handleClickOutside);
+  // Use capture phase to ensure this runs before other handlers
+  document.addEventListener('click', handleClickOutside, true);
 }
 
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initSpotifyFunctionality);
+} else {
   initSpotifyFunctionality();
+}
