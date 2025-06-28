@@ -40,10 +40,7 @@
     justify-content: center;
     overflow-x: hidden;
   }
-  .picture img {
-    height: 100%;
-  }
-
+  
   .title {
     font-family: "Humane";
     font-size: clamp(5rem, 5vw, 9rem) !important;
@@ -106,6 +103,10 @@
     grid-row: span 4;
     grid-column: span 8;
   }
+
+    #draw2 .picture img {
+    height: 100%;
+    }
   /*–––––––––––––––––––––*/
   #draw3 .title {
     grid-column: span 8;
@@ -148,6 +149,10 @@
     grid-row: span 4;
     grid-column: span 8;
   }
+   #draw4 .picture img {
+    height: 100%
+  }
+  
   /*–––––––––––––––––––––*/
   #draw5 .title {
     grid-column: span 8;
@@ -182,6 +187,9 @@
   #draw6 .picture {
     grid-column: span 8;
     grid-row: span 5;
+  }
+  #draw6 .picture img {
+    height: 100%
   }
   #draw6 .content-text {
     grid-column: span 8;
