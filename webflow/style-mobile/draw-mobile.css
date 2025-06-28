@@ -291,7 +291,7 @@
   .grid-element-1 {
     grid-column: span 12;
     grid-row: span 3;
-    display: none;
+
     flex-direction: column;
     justify-content: start;
     align-items: start;
