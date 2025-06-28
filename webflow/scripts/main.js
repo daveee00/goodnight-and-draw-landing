@@ -1,6 +1,3 @@
-// Import Spotify functionality
-import { initSpotifyFunctionality } from './inspo.js';
-
 const pictureArray = [
   "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/Immagine_4.png",
   "https://cdn.jsdelivr.net/gh/daveee00/drawings/array/oswald-1.png",
@@ -149,9 +146,6 @@ window.addEventListener("load", () => {
   logTextListElementIndices();
 
   crossCheckPlayer();
-  
-  // Initialize Spotify functionality
-  initSpotifyFunctionality();
 
   // Add click listeners to all list elements
   textListElement.forEach((id) => {
