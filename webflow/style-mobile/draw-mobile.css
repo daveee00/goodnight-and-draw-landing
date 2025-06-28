@@ -83,6 +83,9 @@
     padding-top: 16px;
     padding-left: 16px;
   }
+  #draw1 .picture img {
+  height: 90%
+  }
   /*–––––––––––––––––––––*/
   #draw2 .title {
     justify-content: end;
