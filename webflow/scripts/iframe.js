@@ -5,7 +5,7 @@ function adjustIframeWidths() {
     // Get all iframes within .draw-grid elements
     const iframes = document.querySelectorAll('.draw-grid iframe');
     
-    // Set width to 60% for each iframe
+    // Set width to 90% for each iframe
     iframes.forEach(iframe => {
       iframe.setAttribute('width', '90%');
     });
@@ -19,8 +19,24 @@ function adjustIframeWidths() {
   }
 }
 
-// Run on page load
-document.addEventListener('DOMContentLoaded', adjustIframeWidths);
+// Function to ensure iframe resizing doesn't interfere with other events
+function initIframeResizing() {
+  // Run on page load with a slight delay to ensure DOM is ready
+  setTimeout(() => {
+    adjustIframeWidths();
+  }, 100);
+  
+  // Run on window resize with debouncing to prevent excessive calls
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(adjustIframeWidths, 150);
+  });
+}
 
-// Run on window resize
-window.addEventListener('resize', adjustIframeWidths); 
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initIframeResizing);
+} else {
+  initIframeResizing();
+} 
