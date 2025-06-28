@@ -145,8 +145,6 @@ window.addEventListener("load", () => {
   logPictureArrayIndices();
   logTextListElementIndices();
 
-  crossCheckPlayer();
-
   // Add click listeners to all list elements
   textListElement.forEach((id) => {
     const element = document.getElementById(id);
