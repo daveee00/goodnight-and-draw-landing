@@ -22,8 +22,9 @@
 .sketch-title {
   height: 20%;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: last baseline;
   font-family: 'humane';
   text-transform: uppercase;
   font-size: 9rem;
@@ -262,4 +263,61 @@
 
 .information-scroll {
   display: none;
+}
+
+
+/*–––––––––––––––––––––––––––––––––*/
+
+/* Add styles for spotify-skt button and frame-container */
+#spotify-skt.spotify-skt-button {
+  cursor: pointer !important;
+  z-index: 10 !important;
+  background: transparent !important;
+  border-radius: 50% !important;
+  padding: 10px !important;
+  transition: all 0.3s ease !important;
+}
+
+#spotify-skt.spotify-skt-button:hover {
+  transform: scale(1.1) !important;
+}
+
+#spotify-skt.spotify-skt-button svg {
+  fill: #000000 !important;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+#frame-container.frame-container {
+  position: absolute !important;
+  top: 55% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 50% !important;
+  min-width: 400px !important;
+  z-index: 20 !important;
+  display: none !important;
+  justify-content: center;
+  align-items: center;
+  background: transparent !important;
+  border-radius: 12px !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+#frame-container.frame-container.show {
+  display: flex !important;
+  opacity: 1 !important;
+  transform: scale(1) translateY(0);
+}
+
+/* Blur effect for elements with .blur-skt class when they have .blur class */
+.blur-skt {
+  transition: filter 0.6s ease-out;
+}
+
+.blur-skt.blur {
+  filter: blur(4px);
 }
